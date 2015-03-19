@@ -1,0 +1,122 @@
+a, u {
+    text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+section.root {
+    display: flex;
+    min-height: 100%;
+    flex-direction: row;
+}
+section.left {
+    background: white;
+    width: 600px;
+    flex-grow: 1;
+    color: #161A1E;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+section.right {
+    width: 100%;
+    flex-grow: 1;
+    background-color: #161A1E;
+    padding: 60px;
+}
+section.right {
+}
+section.left header {
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 3em;
+    color: #161A1E;
+    align-items: center;
+    display: flex;
+    font-weight: 400;
+}
+section.left .stretch {
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+}
+section.left ul {
+    font-size: 1.1em;
+    width: 100%;
+}
+section.left ul li {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+}
+section.left ul li * {
+    display: inline-block;
+}
+section.left ul li label {
+    font-weight: 500;
+}
+section.left ul li strong {
+    color: #888;
+    flex-grow: 1;
+    text-align: right;
+}
+section.left ul li a {
+    color: #3394D7;
+    flex-grow: 1;
+    text-align: right;
+}
+section.left p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #888;
+}
+section.right h1 {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+section.right ul {
+    display: flex;
+}
+section.right ul li {
+    display: flex;
+    width: 100%;
+}
+section.right ul li .left {
+    width: 400px;
+}
+section.right ul li .right {
+    width: 100%;
+}
+section.right ul li h2 {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 8px;
+}
+section.right ul li p {
+    font-size: 1em;
+    color: #B8B8B8;
+    line-height: 1.4em;
+    margin-bottom: 8px;
+}
+section.right ul li label {
+    color: #3394D7;
+    text-transform: lowercase;
+    display: inline-block;
+    padding: 6px 20px;
+    border: 2px solid;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
