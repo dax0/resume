@@ -6,29 +6,34 @@ a, u {
 }
 body {
     font-family: "Roboto";
-    position: absolute;
-    height: 100%;
-    width: 100%;
 }
 section.root {
-    display: flex;
-    min-height: 100%;
-    flex-direction: row;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
 }
 section.left {
     background: white;
-    width: 600px;
+    width: 500px;
     flex-grow: 1;
     color: #161A1E;
     padding: 60px;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
 }
 section.right {
-    width: 100%;
-    flex-grow: 1;
     background-color: #161A1E;
     padding: 60px;
+    left: 500px;
+    position: absolute;
+    right: 0px;
+    overflow-y: scroll;
+    bottom: 0px;
+    top: 0px;
 }
 section.right {
 }
@@ -68,7 +73,7 @@ section.left ul li strong {
     text-align: right;
 }
 section.left ul li a {
-    color: #3394D7;
+    color: #3498db;
     flex-grow: 1;
     text-align: right;
 }
@@ -83,14 +88,16 @@ section.right h1 {
     text-transform: uppercase;
     font-size: 1.5em;
     letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 section.right ul {
     display: flex;
+    flex-direction: column;
 }
 section.right ul li {
     display: flex;
     width: 100%;
+    margin-bottom: 30px;
 }
 section.right ul li .left {
     width: 400px;
@@ -103,20 +110,21 @@ section.right ul li h2 {
     color: white;
     margin-bottom: 8px;
 }
-section.right ul li p {
+section.right ul li p, section.right ul li a {
     font-size: 1em;
     color: #B8B8B8;
     line-height: 1.4em;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 section.right ul li label {
-    color: #3394D7;
+    color: #3498db;
     text-transform: lowercase;
     display: inline-block;
     padding: 6px 20px;
-    border: 2px solid;
+    border: 1px solid;
     border-radius: 2px;
     font-weight: 500;
     font-size: 0.9em;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
